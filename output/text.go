@@ -22,21 +22,24 @@ func newTextLogger(w io.WriteCloser, level logrus.Level, format logrus.Formatter
 }
 
 func NewFileLogger(logPath string, logLevel string, format logrus.Formatter) *TextLogger    {
-	if logPath == "" {
-		logPath = "log"
-	}
 	var w io.WriteCloser
-	var err error
-	w, err = os.OpenFile(logPath, os.O_CREATE|os.O_APPEND|os.O_RDWR, 0600)
-	if err != nil {
-		panic("error to create log file")
+	if logPath != "" {
+		var err error
+		w, err = os.OpenFile(logPath, os.O_CREATE|os.O_APPEND|os.O_RDWR, 0600)
+		if err != nil {
+			panic("error to create log file")
+		}
+	} else {
+		w = os.Stdout
 	}
+
 	return newTextLogger(
 		w,
 		ParseLevel(logLevel),
 		&formatter.TextFormat{},
 	)
 }
+
 func NewConsoleLogger(logLevel string, format logrus.Formatter) *TextLogger  {
 	return newTextLogger(
 		os.Stdout,
