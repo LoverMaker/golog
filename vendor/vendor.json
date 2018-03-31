@@ -1,0 +1,37 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "EzwQMf+WlAcylTyKOh7TvrLaM28=",
+			"path": "github.com/inconshreveable/log15/stack",
+			"revision": "b105bd37f74e5d9dc7b6ad7806715c7a2b83fd3f",
+			"revisionTime": "2015-09-21T21:38:54Z"
+		},
+		{
+			"checksumSHA1": "t5W90J4d7vhrs6+LDp0BalvCZEU=",
+			"path": "github.com/sirupsen/logrus",
+			"revision": "89742aefa4b206dcf400792f3bd35b542998eb3b",
+			"revisionTime": "2017-08-22T13:27:46Z"
+		},
+		{
+			"checksumSHA1": "nqWNlnMmVpt628zzvyo6Yv2CX5Q=",
+			"path": "golang.org/x/crypto/ssh/terminal",
+			"revision": "ca1fcd4ab4c10bc58852a894bcf195fab2229efe",
+			"revisionTime": "2017-11-05T16:37:19Z"
+		},
+		{
+			"checksumSHA1": "m+I0BIEbcs3tm4uct5tvjdhconI=",
+			"path": "golang.org/x/sys/unix",
+			"revision": "d4266bc12aae0b4128952c889b769442fce5d2f1",
+			"revisionTime": "2017-11-06T10:13:21Z"
+		},
+		{
+			"checksumSHA1": "8BcMOi8XTSigDtV2npDc8vMrS60=",
+			"path": "golang.org/x/sys/windows",
+			"revision": "d4266bc12aae0b4128952c889b769442fce5d2f1",
+			"revisionTime": "2017-11-06T10:13:21Z"
+		}
+	],
+	"rootPath": "github.com/LoverMaker/golog"
+}
